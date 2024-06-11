@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: ngocongbang/web
+  pullPolicy: IfNotPresent
+  tag: "v1"
+
+service:
+  type: NodePort
+  port: 81
+  nodePort: 30009
