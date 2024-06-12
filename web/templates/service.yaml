@@ -10,4 +10,4 @@ spec:
       targetPort: {{ .Values.service.port }}
       nodePort: {{ .Values.service.nodePort }}
   selector:
-    app: {{ include "mynodeapp.name" . }}
+    app: {{ include "web.name" . }}
